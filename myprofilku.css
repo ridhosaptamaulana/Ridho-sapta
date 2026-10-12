@@ -1,0 +1,249 @@
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #312e40;
+    line-height: 1.6;
+}
+
+/* NAVIGASI */
+.navbar {
+    background-color: #6d28d9;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    font-size: 25px;
+}
+
+.navbar p {
+    font-size: 14px;
+}
+
+/* KONTEN UTAMA */
+.container {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* BAGIAN PROFIL */
+.hero {
+    background: linear-gradient(135deg, #7c3aed, #c084fc);
+    color: white;
+    padding: 40px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(109, 40, 217, 0.2);
+}
+
+.foto {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 29px;
+    margin-bottom: 5px;
+}
+
+.nim {
+    color: #f3e8ff;
+    margin-bottom: 15px;
+}
+
+.sambutan {
+    max-width: 550px;
+    margin: auto;
+    font-size: 15px;
+}
+
+/* KARTU INFORMASI */
+.card {
+    background-color: white;
+    margin-top: 22px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(49, 46, 64, 0.07);
+}
+
+.card h2 {
+    color: #6d28d9;
+    font-size: 21px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #ede9fe;
+    padding-bottom: 10px;
+}
+
+/* DATA DIRI */
+.data p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeaf7;
+}
+
+.data p:last-child {
+    border-bottom: none;
+}
+
+.data strong {
+    color: #6d28d9;
+    min-width: 42%;
+}
+
+.data span {
+    text-align: right;
+}
+
+/* PENDIDIKAN */
+.pendidikan {
+    background-color: #f5f3ff;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 5px solid #8b5cf6;
+}
+
+.pendidikan h3 {
+    color: #5b21b6;
+    margin-bottom: 5px;
+}
+
+.pendidikan span {
+    display: inline-block;
+    color: #6d28d9;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* HOBI */
+.hobi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.hobi div {
+    background-color: #f5f3ff;
+    padding: 18px 10px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.hobi div:hover {
+    background-color: #ede9fe;
+    transform: translateY(-4px);
+}
+
+.hobi p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* KEAHLIAN */
+.keahlian {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.keahlian span {
+    background-color: #ede9fe;
+    color: #5b21b6;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* MEDIA SOSIAL */
+.sosial {
+    display: flex;
+    gap: 12px;
+}
+
+.sosial a {
+    display: inline-block;
+    background-color: #6d28d9;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sosial a:hover {
+    background-color: #4c1d95;
+}
+
+/* BAGIAN BAWAH */
+footer {
+    text-align: center;
+    color: #77718b;
+    font-size: 13px;
+    padding: 25px 10px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 20px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 0 12px;
+    }
+
+    .hero {
+        padding: 30px 18px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .data p {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .data span {
+        text-align: left;
+    }
+
+    .hobi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sosial {
+        flex-direction: column;
+    }
+
+    .sosial a {
+        text-align: center;
+    }
+}
